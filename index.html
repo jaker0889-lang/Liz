@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Case of My Favorite Classmate 💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="app">
+
+        <!-- Welcome Screen -->
+        <section id="welcome" class="page active">
+            <h1>WARNING! ⚠️</h1>
+            <p>A certified bully has entered your system.</p>
+            <button onclick="startWebsite()">Proceed at your own risk</button>
+        </section>
+
+        <!-- Wanted Poster -->
+        <section id="wanted" class="page">
+            <h1>WANTED: PROFESSIONAL BULLY</h1>
+
+            <img src="./Liz.jpg"
+                 alt="Liz's picture"
+                 Class="wanted-photo">
+
+
+            <p>Name: Liz</p>
+            <p>Crime: Bullying her number one fan.</p>
+            <p>Status: Cute face. 😭</p>
+            <button onclick="nextPage('awards')">Next →</button>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" class="page">
+            <h1>Official Awards 🏆</h1>
+            <p>Favorite Classmate Since Prep School</p>
+            <p>Best Roblox Teammate</p>
+            <p>Best Floryn User</p>
+            <p>Professional Bully of the Year</p>
+            <button onclick="nextPage('message')">Next →</button>
+        </section>
+
+        <!-- Appreciation -->
+        <section id="message" class="page">
+            <h1>A Little Message 💙</h1>
+            <p>
+                Ikaw pa rin ang favorite kong classmate,
+                kahit palagi mo'ko binu-bully.
+                HAHAHAHAHA 😭
+            </p>
+            <p>
+                It's really nice reconnecting with you
+                after all these years.
+            </p>
+            <button onclick="nextPage('final')">One last thing...</button>
+        </section>
+
+        <!-- Final Invitation -->
+        <section id="final" class="page">
+            <h1>ONE LAST QUESTION...</h1>
+            <h2>Samahan mo na'ko gumala sa wednesday? 💙</h2>
+            <button onclick="answerYes()">YES!</button>
+            <button onclick="answerNo()">Maybe next time</button>
+            <p id="response"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
